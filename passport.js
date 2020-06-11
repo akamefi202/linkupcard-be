@@ -88,8 +88,8 @@ passport.use(new LocalStrategy({
 
 // Google Strategy
 passport.use(new GoogleStrategy({
-    clientID: "101...",
-    clientSecret: "3XC...",
+    clientID: "",
+    clientSecret: "",
     callbackURL: process.env.SERVER_URL + "/users/auth/google/callback"
 },
 function(accessToken, refreshToken, profile, done) {
@@ -111,8 +111,8 @@ function(accessToken, refreshToken, profile, done) {
 
 // Facebook Strategy
 passport.use(new FacebookStrategy({
-    clientID: "252...",
-    clientSecret: "8d1...",
+    clientID: "",
+    clientSecret: "",
     callbackURL: process.env.SERVER_URL + "/users/auth/facebook/callback"
 },
 function(accessToken, refreshToken, profile, done) {
@@ -125,8 +125,8 @@ function(accessToken, refreshToken, profile, done) {
 
 // Twitter Strategy
 passport.use(new TwitterStrategy({
-    consumerKey: "wXz...",
-    consumerSecret: "9sF...",
+    consumerKey: "",
+    consumerSecret: "",
     callbackURL: process.env.SERVER_URL + "/users/auth/twitter/callback"
 },
 function(accessToken, refreshToken, profile, done) {
